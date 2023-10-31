@@ -33,7 +33,7 @@ def main():
     st.title("©️CLASSIFICATION OF TEXT INTO EMOTION STATES😃")
     message = st.text_input("Give a Sentence")
     
-    loaded_model = load_model(r'biLSTM_w2v.h5') # Load the Keras model
+    loaded_model = load_model(r'https://github.com/basavaadarsh5/nlp-/raw/main/cnn_w2v.h5') # Load the Keras model
     
     if st.button("THE EMOTION STATE IS "):
         result = text_prediction(message, loaded_model)
