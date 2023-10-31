@@ -1,5 +1,11 @@
-!pip install nltk
-!pip install matplotlib
+import subprocess
+
+# Install the nltk package using pip
+subprocess.run(['pip', 'install', 'nltk'], check=True)
+
+# You can also install multiple packages by extending the list:
+# subprocess.run(['pip', 'install', 'package1', 'package2'], check=True)
+
 import streamlit as st
 import pandas as pd
 import numpy as np
