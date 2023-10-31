@@ -1,3 +1,11 @@
+python -m venv venv  # Create a virtual environment
+source venv/bin/activate  # Activate the virtual environment (Linux/Mac)
+pip install -r requirements.txt  # Install the dependencies
+
+conda create --name myenv python=3.7  # Create a conda environment
+conda activate myenv  # Activate the conda environment
+conda install --file requirements.txt  # Install the dependencies
+
 import streamlit as st
 import pandas as pd
 import numpy as np
